@@ -156,6 +156,7 @@ map <C-A> :tabprev<CR>
 map <F2> :<C-u>Unite bookmark -default-action=lcd<CR>
 inoremap <F2> <ESC>:<C-u>Unite bookmark -default-action=lcd<CR>
 
+map <F3> :VimFiler<CR>
 if has('win32')
     map <F3> :VimFiler $HOME<CR>
 elseif has('mac')
