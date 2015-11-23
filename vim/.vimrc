@@ -17,6 +17,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+
+" ------------------------------------------------------------------------------
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
@@ -31,7 +33,31 @@ NeoBundle 'Shougo/vimproc.vim', {
 \    },
 \ }
 
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'vim-scripts/YankRing.vim'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'sakuraiyuta/commentout.vim'
+NeoBundle 'https://github.com/thinca/vim-qfreplace.git'
+NeoBundle "Shougo/unite-outline"
+NeoBundle 'bling/vim-airline'
+
+" ------------------------------------------------------------------------------
+
 call neobundle#end()
+
+" ------------------------------------------------------------------------------
+"  Shortcut settings
+
+map <F12> :Unite -vertical -direction=rightbelow -winwidth=50 outline<CR>
+
+" ------------------------------------------------------------------------------
 
 " Required:
 filetype plugin indent on
